@@ -10,7 +10,7 @@ Este proyecto es una API básica con autenticación que permite realizar operaci
 
 ## Preparación
 
-- Edita los archivos .env con tus variables de entorno:
+- Edita los archivos .env con tus variables de entorno.
    
 ## Instalación
 
@@ -32,6 +32,10 @@ Este proyecto es una API básica con autenticación que permite realizar operaci
    npm install
    npm run serve
    ```
+4. Para ingresar al sistema, utiliza las siguientes credenciales de usuario:
+
+   - **Correo electrónico**: `admin@admin.com`
+   - **Contraseña**: `admin`
 
 ## Rutas de la API
 
@@ -47,18 +51,18 @@ Este proyecto es una API básica con autenticación que permite realizar operaci
 
 ### POST /
 **Descripción**: Crea un nuevo usuario (requiere token).  
-**Request**: `{ "name": "John Doe", "email": "john@example.com", "password": "123456" }`  
-**Response**: `{ "id": 1, "name": "John Doe", "email": "john@example.com" }`
+**Request**: `{ "firstName": "Lucas", "lastName": "Mochi" "email": "lucas@example.com", "password": "123456" }`  
+**Response**: `{ "id": 1, "firstName": "Lucas", "lastName": "Mochi" "email": "lucas@example.com" }`
 
 ### PUT /:id
 **Descripción**: Actualiza los datos de un usuario existente (requiere token).  
-**Request**: `{ "name": "Jane Doe", "email": "jane@example.com" }`  
-**Response**: `{ "id": 1, "name": "Jane Doe", "email": "jane@example.com" }`
+**Request**: `{ "firstName": "Lucas", "lastName": "Mochi" "email": "lucas@example.com" }`  
+**Response**: `{ "id": 1, "firstName": "Lucas", "lastName": "Mochi" "email": "lucas@example.com" }`
 
 ### GET /
 **Descripción**: Obtiene la lista de usuarios (requiere token).  
 **Request**: `No necesita parámetros en el cuerpo de la solicitud.`  
-**Response**: `[ { "id": 1, "name": "John Doe", "email": "john@example.com" }, { "id": 2, "name": "Jane Doe", "email": "jane@example.com" } ]`
+**Response**: `[ { "id": 1, "firstName": "Lucas", "lastName": "Mochi" "email": "lucas@example.com", "password": "$2b$10$KIXA1hJXv..." } { "id": 2, "firstName": "Lucas", "lastName": "Mochi" "email": "lucas@example.com", "password": "$2b$10$KIXA1hJXv..." } ]`
 
 ### DELETE /:id
 **Descripción**: Elimina un usuario existente (requiere token).  
@@ -69,7 +73,7 @@ Este proyecto es una API básica con autenticación que permite realizar operaci
 
 - **Implementación de OAuth**: Se integrará OAuth para el manejo de autenticación, permitiendo un flujo más seguro y flexible mediante access tokens. Esto permitirá que los clientes (aplicaciones) puedan autenticarse y obtener tokens de acceso para interactuar con la API, mejorando la seguridad en la gestión de sesiones.
 
-- **Manejo de Roles**: Se añadirá un sistema de roles, donde cada usuario será asignado a un rol específico (por ejemplo, administrador, editor, usuario básico). Dependiendo del rol, los usuarios podrán tener diferentes permisos para agregar, eliminar o modificar otros usuarios dentro de la plataforma. Esto permitirá una
+- **Manejo de Roles**: Se añadirá un sistema de roles, donde cada usuario será asignado a un rol específico (por ejemplo, administrador, editor, usuario básico). Dependiendo del rol, los usuarios podrán tener diferentes permisos para agregar, eliminar o modificar otros usuarios dentro de la plataforma.
 
 
 
