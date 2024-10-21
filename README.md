@@ -17,7 +17,7 @@ Este proyecto es una API básica con autenticación que permite realizar operaci
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/LucasMochi/crud-workanda
+   git clone https://github.com/LucasMochi/workanda
    ```
 
 2. Prender el servidor de BACKEND:
