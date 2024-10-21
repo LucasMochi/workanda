@@ -11,6 +11,7 @@ Este proyecto es una API básica con autenticación que permite realizar operaci
 ## Preparación
 
 - Edita los archivos .env con tus variables de entorno.
+- Ejecutar script de SQL (Archivo de migraciones pendiente de ejecución)
    
 ## Instalación
 
@@ -71,9 +72,10 @@ Este proyecto es una API básica con autenticación que permite realizar operaci
 
 ## Mejoras Futuras
 
-- **Implementación de OAuth**: Se integrará OAuth para el manejo de autenticación, permitiendo un flujo más seguro y flexible mediante access tokens. Esto permitirá que los clientes (aplicaciones) puedan autenticarse y obtener tokens de acceso para interactuar con la API, mejorando la seguridad en la gestión de sesiones.
+- **Implementación de OAuth**: Se integrará OAuth para el manejo de autenticación, permitiendo un flujo más seguro y flexible mediante access tokens. Esto permitirá que los clientes (aplicaciones) puedan autenticarse y obtener tokens de acceso para interactuar con la API. Se crearan modelos para clientes, usuarios y tokens.
 
 - **Manejo de Roles**: Se añadirá un sistema de roles, donde cada usuario será asignado a un rol específico (por ejemplo, administrador, editor, usuario básico). Dependiendo del rol, los usuarios podrán tener diferentes permisos para agregar, eliminar o modificar otros usuarios dentro de la plataforma.
 
+- **Migraciones**: Se crearan entornos de desarrollo para la ejecucion de migraciones usando Sequelize.
 
-
+- **Testing de Integración y unitarios**: Se crearan archivos de testing para testear el funcionamiento de las rutas y de los servicios usando Jest.
